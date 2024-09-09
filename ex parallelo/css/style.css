@@ -1,92 +1,89 @@
-body{
+body{ /* Remove margens e preenchimentos padrões de todo o corpo da página */
     margin: 0;
     padding: 0;
 }
-header {
-    background-image: url(../img/slidebg1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 720px;
-    padding-top: 15px;
+header{ /* Define o estilo para o cabeçalho */
+    background-image: url(../img/slidebg1.jpg); /*imagem de fundo*/
+    background-repeat: no-repeat; /* A imagem não deve repetir */
+    background-size: cover; /* A imagem cobre todo o elemento */
+    background-position: center; /* Imagem centralizada */
+    width: 100%;  /* Largura total da tela */
+    height: 720px; /* Altura fixa */
+    padding-top: 15px; /* Espaço interno superior */
 }
-nav {
-    background-color: black;
-    min-width: 1200px;
-    max-width: 1400px;
-    height: 125px;
-    margin: 0 auto 0 auto;
+nav{ /* Estilo para a navegação */
+    background-color: black; /* Cor de fundo preta */
+    min-width: 1200px; /* Largura mínima */
+    max-width: 1400px; /* Largura máxima */
+    height: 125px; /* Altura fixa */
+    margin: 0 auto 0 auto; /* Centraliza horizontalmente */
 }
-nav #logo {
-    margin: 23px;
-    float:left;
+nav #logo { /* Estilo para o logo dentro da navegação */
+    margin: 23px; /* Espaço interno da logo */
+    float:left; /* Alinha à esquerda */
 }
-
-nav #logo img {
-    height: 75px;
+nav #logo img { /* Ajusta a altura da imagem do logo */
+    height: 75px; /* Altura fixa da imagem do logo */
 }
-nav ul {
-    display:flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-   list-style: none;
+nav ul { /* Estilo para a lista de itens de navegação */
+    display:flex; /* Usa o layout flexível */
+    flex-direction: row; /* Alinha os itens na horizontal */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimentos */
+   list-style: none; /* Remove marcadores da lista */
 }
-nav ul li{
-    color:aliceblue;
-    font-size: 16px;
-    font-family: Montserrat, sans-serif;
-    margin: 0 20px;
+nav ul li{ /* Estilo para cada item de lista na navegação */
+    color:aliceblue; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: Montserrat, sans-serif; /* Família da fonte */
+    margin: 0 20px; /* Margens laterais */
     display: flex;
-    align-items: center;
+    align-items: center;/* Alinha verticalmente */
 }
-nav ul li a {
+nav ul li a { /* Estilo para links dentro dos itens de lista da navegação */
     text-decoration: line-through;
     color: white;
-    text-transform: uppercase;
-    font-size: 14px;
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-size: 14px; /* Tamanho da fonte */
 }
 
-#menu li span {
+#menu li span { /* Estilo específico para os itens de menu */
     font-family: Montserrat,sans-serif;
     font-size: 11px;
     color: rgb(134, 134, 134);
-    margin-right: 3px;
-    margin-top: 3px;
+    margin-right: 3px; /* Margem à direita */
+    margin-top: 3px;  /* Margem no topo */
 }
 #menu li a{
-    margin-left: 5px;
+    margin-left: 5px; /* Margem à esquerda */
     color:white;
     font-size: 14px;
     text-transform: uppercase;
-    text-decoration: none;
-    transition: 1s;
+    text-decoration: none; /* Remove sublinhado do texto */
+    transition: 1s;  /* Transição suave para alterações de estilo */
 
 }
-#menu li a:hover{
-    color: #e7a920;
+#menu li a:hover{ /* Estilo para o estado de foco dos links de menu */
+    color: #e7a920; /* Cor do texto ao passar o mouse */
     transition: 1s;
-    text-decoration: line-through;
+    text-decoration: line-through; /* Linha atravessada ao passar o mouse */
 
 }
-section{
+.regua{ /* Estilo para o divisor de seção */
     background-image: url(../img/divider-dark.png);
-    width: 100%;
-    height: 500px;
-    background-repeat: repeat-x;
+    background-repeat: repeat-x; /* A imagem se repete horizontalmente */
     padding-top: 100px;
 }
 
-.icons{
+.icons{ /* Estilo para o container de ícones */
     height: 100px;
     width: 345px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Alinha os ícones horizontalmente */
 
 }
-.icons .icon img{
+.icons .icon img{ /* Estilo para cada ícone dentro do container */
     width: 115px;
 }
 .txt{
@@ -100,47 +97,72 @@ section{
     margin: 0 auto;
 }
 .txt h6{
-    font-size: 28px;
-    font-weight: 300;
-    width: 80%;
-    display: inline-block;
-    line-height: 40px;
+    font-size: 28px; /* Tamanho da fonte */
+    font-weight: 300; /* Peso da fonte */
+    width: 80%; /* Largura relativa */
+    display: inline-block; /* Exibe como bloco em linha */
+    line-height: 40px;  /* Altura da linha */
     font-family: 'Roboto Slab', serif;
     text-align: center;
-    margin-left: 90px;
+    margin-left: 95px; /* Margem à esquerda */
+    margin-top: 40px; /* Margem no topo */
 }
-.txt h4{
+.trabalhos{ /* Estilo geral para a seção de trabalhos */
+    height: 200px;
+    width: 100%;
+}
+.cabecalho{ /* Estilo para o cabeçalho dentro da seção de trabalhos */
+    min-width: 1200px;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+}
+.trabalhos .cabecalho h4 span{ /* Estilo para o texto com a classe span dentro do cabeçalho */
+    color: #e7a920;
+    text-transform: uppercase;
+    letter-spacing: 11px;
+    font-weight: 300;
     font-size: 24px;
-    font-weight: 300;
-    width: 80%;
-    display: inline-block;
-    line-height: 40px;
-    font-family: 'Montserrat', serif; 
-    text-align: center;
-    margin-left: 0px;
-    color: rgb(231, 169, 32);
-    text-transform: uppercase; 
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic; /*estilo da fonte*/ 
 }
-.txt h1{
+.trabalhos .cabecalho h4 b{ /* Estilo para o texto em negrito dentro do cabeçalho */
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 85px; 
+    text-transform: uppercase;
+    color: #000;
+    font-style: italic;
+}
+.trabalhos .cabecalho p{ /* Estilo para o parágrafo dentro do cabeçalho */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    font-weight: 350;
-    width: 80%;
-    display: inline-block;
-    line-height: 40px;
-    font-family: 'Roboto Slab', serif;
-    text-align: center;
-    margin-left: 90px;
-    color: black;
-    height: 29px;
+    margin: 12px 0 0 0;
 }
-
-
+.trabalhos .mosaico{ /* Estilo para o container de mosaico dentro da seção de trabalhos */
+    min-width: 1200px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.trabalhos .mosaico .item{  /* Estilo para os itens dentro do container de mosaico */
+    height: 470px;
+    width: 570px;
+    background-image: url(../img/project-1.jpg);
+    background-size: contain; /* Ajusta a imagem para caber dentro do item mantendo as proporções */
+    background-position: center;
+}
+.trabalhos .mosaico .item:hover{
+    background-size: 110%; /* Aumenta o tamanho da imagem de fundo em 10% quando o mouse passa sobre o item */
+    background-position: center;
+}
     /*-------------------------------------trabalhos-----------------------------------------*/
 #trabalho {
     background-color: black;
 }
 
-
+ 
 
   
 
