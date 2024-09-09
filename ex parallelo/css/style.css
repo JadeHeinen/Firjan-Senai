@@ -2,33 +2,150 @@ body{
     margin: 0;
     padding: 0;
 }
-header{
-    background-color: aqua;
+header {
+    background-image: url(../img/slidebg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 500px;
+    height: 720px;
     padding-top: 15px;
 }
-nav{
+nav {
     background-color: black;
     min-width: 1200px;
     max-width: 1400px;
     height: 125px;
     margin: 0 auto 0 auto;
 }
-nav #logo{
+nav #logo {
     margin: 23px;
-    float: left;
+    float:left;
 }
-nav #logo img{
+
+nav #logo img {
     height: 75px;
 }
+nav ul {
+    display:flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+   list-style: none;
+}
 nav ul li{
-    color: aliceblue;
+    color:aliceblue;
     font-size: 16px;
     font-family: Montserrat, sans-serif;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    margin: 0 20px;
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
+nav ul li a {
+    text-decoration: line-through;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+#menu li span {
+    font-family: Montserrat,sans-serif;
+    font-size: 11px;
+    color: rgb(134, 134, 134);
+    margin-right: 3px;
+    margin-top: 3px;
+}
+#menu li a{
+    margin-left: 5px;
+    color:white;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 1s;
+
+}
+#menu li a:hover{
+    color: #e7a920;
+    transition: 1s;
+    text-decoration: line-through;
+
+}
+section{
+    background-image: url(../img/divider-dark.png);
+    width: 100%;
+    height: 500px;
+    background-repeat: repeat-x;
+    padding-top: 100px;
+}
+
+.icons{
+    height: 100px;
+    width: 345px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
+}
+.icons .icon img{
+    width: 115px;
+}
+.txt{
+    height: 100px;
+    width: 100%;
+}
+
+/*sem internet*/
+.txt{
+    width: 850px;
+    margin: 0 auto;
+}
+.txt h6{
+    font-size: 28px;
+    font-weight: 300;
+    width: 80%;
+    display: inline-block;
+    line-height: 40px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin-left: 90px;
+}
+.txt h4{
+    font-size: 24px;
+    font-weight: 300;
+    width: 80%;
+    display: inline-block;
+    line-height: 40px;
+    font-family: 'Montserrat', serif; 
+    text-align: center;
+    margin-left: 0px;
+    color: rgb(231, 169, 32);
+    text-transform: uppercase; 
+}
+.txt h1{
+    font-size: 20px;
+    font-weight: 350;
+    width: 80%;
+    display: inline-block;
+    line-height: 40px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    margin-left: 90px;
+    color: black;
+    height: 29px;
+}
+
+
+    /*-------------------------------------trabalhos-----------------------------------------*/
+#trabalho {
+    background-color: black;
+}
+
+
+
+  
+
+
+
+
+
+
